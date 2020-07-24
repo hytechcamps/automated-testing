@@ -9,7 +9,6 @@
 
 ![](https://i.imgur.com/FfGdAns.png)
 
-### Example
 ```js
 cy.get('#login-button')
 ```
@@ -17,7 +16,6 @@ cy.get('#login-button')
 ## Typing into a Text Box
 `.type()` can be added to the end of a `cy.get()` command to type text into an element.
 
-### Example
 ```js
 cy.get('.username-input').type('myname')
 ```
@@ -25,7 +23,6 @@ cy.get('.username-input').type('myname')
 ## Clicking an Element
 `.click()` can be added to the end of a `cy.get()` command to click on an element.
 
-### Example
 ```js
 cy.get('#login-button').click()
 ```
@@ -33,7 +30,6 @@ cy.get('#login-button').click()
 ## Verifying an Element Contains Certain Text
 `.should()` can be added to the end of a `cy.get()` command to check the contents of an element.
 
-### Example
 ```js
 cy.get('.label').should('contain', 'Cart')
 ```
