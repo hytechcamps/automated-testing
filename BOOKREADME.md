@@ -2,6 +2,6 @@
 A workshop introducing automated testing using the [Cypress](https://cypress.io) framework.
 
 ## Material
-- <a href="RetroGames.pptx" target="_blank">Retro Games PowerPoint Presentation</a>
+- <a href="AutomatedTestingForBeginners.pptx" target="_blank">PowerPoint Presentation</a>
 - [Follow-Along Activity](FollowAlong.md)
-- [Individual Exercises](Individual.md)
+- [Challenge](Challenge.md)
