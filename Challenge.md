@@ -27,3 +27,6 @@ These actions should be performed by the automated test.
     - Click on the "FINISH" button
 1. Verify that the "Finish" screen appears
     - Check the text on the page
+
+## BONUS: Create a New `it` Test
+After testing the cart and checkout functionality, add another `it` test and test some other functionality on the page. Try opening up the hamburger menu in the upper left and verifying that all the items go to the correct places!
