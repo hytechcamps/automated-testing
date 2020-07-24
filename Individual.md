@@ -1,1 +1,3 @@
-# Cypress Individual Activity
+# Cypress Individual Exercises
+Complete the following exercises.
+
