@@ -1,0 +1,391 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Follow-Along · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Challenge.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="FollowAlong.html">
+            
+                <a href="FollowAlong.html">
+            
+                    
+                    Follow-Along
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Challenge.html">
+            
+                <a href="Challenge.html">
+            
+                    
+                    Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CypressCommandsCheetSheet.md">
+            
+                <span>
+            
+                    
+                    Cypress Commands Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Follow-Along</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cypress-follow-along-activity">Cypress Follow-Along Activity</h1>
+<p>Complete this activity to begin writing some tests with Cypress.</p>
+<p>To start, the <strong>hy_tech.spec.js</strong> file should contain the following code:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types=&quot;cypress&quot; /&gt;</span>
+
+context(<span class="hljs-string">&apos;Hy-Tech Camp&apos;</span>, () =&gt; {
+
+  it(<span class="hljs-string">&apos;visits the sample website&apos;</span>, () =&gt; {
+    cy.visit(<span class="hljs-string">&apos;https://www.saucedemo.com&apos;</span>)
+  })
+})
+</code></pre>
+<p>This code will open up the web browser and visit the Sauce Demo URL.</p>
+<h2 id="opening-the-test-runner">Opening the Test Runner</h2>
+<p>In Visual Studio Code, open the &quot;Terminal&quot; menu and select &quot;New Terminal&quot; at the top:</p>
+<p><img src="https://i.imgur.com/itO46Pd.png" alt=""></p>
+<p>When the terminal opens, type in <code>npx cypress open</code> and press Enter:</p>
+<p><img src="https://i.imgur.com/8xFf8KH.png" alt=""></p>
+<p>After that, the test runner should open! Click on the <code>hy_tech.spec.js</code> test to run it:</p>
+<p><img src="https://i.imgur.com/ouBlS5M.png" alt=""></p>
+<p>This will open the web browser and run the test. So far, all it does is open up the Sauce Demo website.</p>
+<p>Next, use some code to tell the test what it should do! The first thing to test is the login process. To do that, the &quot;tester&quot; needs to type in a username and password, and click the &quot;Submit&quot; button.</p>
+<h2 id="getting-the-username-text-box">Getting the Username Text Box</h2>
+<p>On the top bar, click the crosshair icon to open the <strong>Selector Playground</strong>:</p>
+<p><img src="https://i.imgur.com/Rq99SuO.png" alt=""></p>
+<p>This tool allows the developer to select different parts of the webpage in order to interact with them. Hover over the &quot;Username&quot; text box, and click it when it is highlighted. That should update the text next to <code>cy.get</code> at the top:</p>
+<p><img src="https://i.imgur.com/uvzGFv3.png" alt=""></p>
+<p>Next to that, click the &quot;Copy to Clipboard&quot; button to copy the selector text:</p>
+<p><img src="https://i.imgur.com/FfGdAns.png" alt=""></p>
+<p>That text is a piece of code that will <em>select</em> the text box so it can be manipulated. Go back into the <strong>hy_tech.spec.js</strong> file in Visual Studio Code, and paste that code under the <code>cy.visit</code> command. It should look something like this:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types=&quot;cypress&quot; /&gt;</span>
+
+context(<span class="hljs-string">&apos;Hy-Tech Camp&apos;</span>, () =&gt; {
+
+  it(<span class="hljs-string">&apos;visits the sample website&apos;</span>, () =&gt; {
+    cy.visit(<span class="hljs-string">&apos;https://www.saucedemo.com&apos;</span>)
+    cy.get(<span class="hljs-string">&apos;[data-test=username]&apos;</span>)
+  })
+})
+</code></pre>
+<p>The test should begin to run again automatically when the file is saved.</p>
+<h2 id="entering-text-into-the-username-text-box">Entering Text into the Username Text Box</h2>
+<p>Now that the text box has been selected in the code, it is possible to enter text. At the end of the <code>cy.get</code> line, add <code>.type(&apos;standard_user&apos;)</code> after the right parenthesis. Save the file, and re-open the Cypress browser to see the text entered in the box!</p>
+<p>At this point, the code should look like this:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types=&quot;cypress&quot; /&gt;</span>
+
+context(<span class="hljs-string">&apos;Hy-Tech Camp&apos;</span>, () =&gt; {
+
+  it(<span class="hljs-string">&apos;visits the sample website&apos;</span>, () =&gt; {
+    cy.visit(<span class="hljs-string">&apos;https://www.saucedemo.com&apos;</span>)
+    cy.get(<span class="hljs-string">&apos;[data-test=username]&apos;</span>).type(<span class="hljs-string">&apos;standard_user&apos;</span>)
+  })
+})
+</code></pre>
+<h2 id="filling-out-the-password-text-box">Filling Out the Password Text Box</h2>
+<p>Filling out the Password text box will be very similar to filling out the Username text box.</p>
+<ol>
+<li>Open the Cypress browser</li>
+<li>Ensure that the Selector Playground tool is activated</li>
+<li>Click on the &quot;Password&quot; text box to select it</li>
+<li>Click the &quot;Copy to Clipboard&quot; button to copy the <code>cy.get</code> command</li>
+<li>Open the <code>hy_tech.spec.js</code> file in Visual Studio Code</li>
+<li>Make a new line under the other <code>cy.get</code> command</li>
+<li>Paste in the new <code>cy.get</code> command</li>
+<li>After the right parenthesis of the new command, add the code to type in a password of &quot;secret_sauce&quot;</li>
+<li>Save the file, and the test should re-run automatically!</li>
+</ol>
+<h3 id="code">Code</h3>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;[data-test=password]&apos;</span>).type(<span class="hljs-string">&apos;secret_sauce&apos;</span>)
+</code></pre>
+<h2 id="clicking-the-login-button">Clicking the Login Button</h2>
+<p>Now that the username and password have been entered, it is time to click the &quot;Login&quot; button.</p>
+<ol>
+<li>Open the Cypress browser</li>
+<li>Ensure that the Selector Playground tool is activated</li>
+<li>Click on the &quot;Login&quot; button to select it</li>
+<li>Click the &quot;Copy to Clipboard&quot; button to copy the <code>cy.get</code> command</li>
+<li>Open the <code>hy_tech.spec.js</code> file in Visual Studio Code</li>
+<li>Make a new line under the previous <code>cy.get</code> command</li>
+<li>Paste in the new <code>cy.get</code> command</li>
+<li>After the right parenthesis of the new command, add <code>.click()</code> to click the button</li>
+<li>Save the file, and the test should re-run automatically!</li>
+</ol>
+<h3 id="code">Code</h3>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;#login-button&apos;</span>).click()
+</code></pre>
+<h2 id="running-a-test">Running a Test</h2>
+<p>At this point, the test runner should successfully log into the Sauce Demo website. The site <em>should</em> load the products page after logging in. Verify that the intended behavior is actually occuring by using <code>should</code>.</p>
+<ol>
+<li>Open the Cypress browser</li>
+<li>Ensure that the Selector Playground tool is activated</li>
+<li>Click on the header where it says &quot;Products&quot;</li>
+<li>Click the &quot;Copy to Clipboard&quot; button to copy the <code>cy.get</code> command</li>
+<li>Open the <code>hy_tech.spec.js</code> file in Visual Studio Code</li>
+<li>Make a new line under the previous <code>cy.get</code> command</li>
+<li>Paste in the new <code>cy.get</code> command</li>
+<li>After the right parenthesis of the new command, add <code>.should()</code></li>
+<li>Between the parentheses, type in <code>&apos;contain&apos;, &apos;Products&apos;</code><ul>
+<li>Note that it must be case sensitive</li>
+</ul>
+</li>
+<li>Save the file, and the test should re-run automatically!</li>
+</ol>
+<p>At this point, the test should pass. Note that the code reads a lot like plain English: &quot;The product label should contain the word Products.&quot;</p>
+<h3 id="code">Code</h3>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;.product_label&apos;</span>).should(<span class="hljs-string">&apos;contain&apos;</span>, <span class="hljs-string">&apos;Products&apos;</span>)
+</code></pre>
+<h2 id="final-code">Final Code</h2>
+<p>By the end of the activity, the code should look like this:</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types=&quot;cypress&quot; /&gt;</span>
+
+context(<span class="hljs-string">&apos;Hy-Tech Camp&apos;</span>, () =&gt; {
+
+  it(<span class="hljs-string">&apos;visits the sample website&apos;</span>, () =&gt; {
+    cy.visit(<span class="hljs-string">&apos;https://www.saucedemo.com&apos;</span>)
+    cy.get(<span class="hljs-string">&apos;[data-test=username]&apos;</span>).type(<span class="hljs-string">&apos;standard_user&apos;</span>)
+    cy.get(<span class="hljs-string">&apos;[data-test=password]&apos;</span>).type(<span class="hljs-string">&apos;secret_sauce&apos;</span>)
+    cy.get(<span class="hljs-string">&apos;#login-button&apos;</span>).click()
+    cy.get(<span class="hljs-string">&apos;.product_label&apos;</span>).should(<span class="hljs-string">&apos;contain&apos;</span>, <span class="hljs-string">&apos;Products&apos;</span>)
+  })
+})
+</code></pre>
+<p>The test runner should open the website, enter the username and password, click the Login button, and verify that the page opened is the &apos;Products&apos; page!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Challenge.html" class="navigation navigation-next " aria-label="Next page: Challenge">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Follow-Along","level":"1.2","depth":1,"next":{"title":"Challenge","level":"1.3","depth":1,"path":"Challenge.md","ref":"Challenge.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"BOOKREADME.md","ref":"BOOKREADME.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FollowAlong.md","mtime":"2020-07-24T17:27:56.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T17:28:34.544Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
