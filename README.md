@@ -12,6 +12,7 @@ A camp to introduce Automated Testing with the [Cypress](https://www.cypress.io/
 | Individual | 45m |
 
 ## Software Requirements
+Go to [this folder](https://app.sharebase.com/#/folder/1279586/share/3-TMkMlfmH5Qx1RFMll6XB4vI3Reo) to find the necessary setup files.
 
 - Google Chrome
 - Node.js
@@ -37,5 +38,5 @@ Present the [PowerPoint](AutomatedTestingForBeginners.pptx).
 ## Follow-Along
 Go through the [follow-along](FollowAlong.md) activity as a group. The instructor should share their screen, and the students should follow-along on their own computers. The instructor should ask the students for suggestions about what to do next.
 
-## Individual Work
-Allow the students to complete the [individual work](Individual.md). By the end, their code should look like the [hy_tech_answers.spec.js](CypressProject/cypress/integration/hy_tech_answers.spec.js) file.
+## Challenge
+Allow the students to complete the [challenge](Challenge.md). By the end, their code should look like the [hy_tech_answers.spec.js](CypressProject/cypress/integration/hy_tech_answers.spec.js) file.
