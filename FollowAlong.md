@@ -1,0 +1,1 @@
+# Cypress Follow-Along Activity
