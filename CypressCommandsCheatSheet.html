@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>Cypress Commands Cheat Sheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="FollowAlong.html" />
     
+    <link rel="prev" href="Challenge.html" />
     
 
     </head>
@@ -87,7 +87,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -126,7 +126,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="CypressCommandsCheatSheet.html">
+        <li class="chapter active" data-level="1.4" data-path="CypressCommandsCheatSheet.html">
             
                 <a href="CypressCommandsCheatSheet.html">
             
@@ -169,7 +169,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >Cypress Commands Cheat Sheet</a>
     </h1>
 </div>
 
@@ -184,19 +184,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="automated-testing-for-beginners">Automated Testing for Beginners</h1>
-<p>A workshop introducing automated testing using the <a href="https://cypress.io" target="_blank">Cypress</a> framework.</p>
-<h2 id="material">Material</h2>
-<ul>
-<li><a href="AutomatedTestingForBeginners.pptx" target="_blank">PowerPoint Presentation</a></li>
-<li><a href="FollowAlong.html">Follow-Along Activity</a></li>
-<li><a href="Challenge.html">Challenge</a></li>
-</ul>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="CypressCommandsCheatSheet.html">Cypress Commands Cheat Sheet</a></li>
-<li><a href="https://docs.cypress.io/guides/overview/why-cypress.html" target="_blank">Cypress Documentation</a></li>
-</ul>
+                                <h1 id="cypress-commands-cheat-sheet">Cypress Commands Cheat Sheet</h1>
+<h2 id="getting-an-element">Getting an Element</h2>
+<p><code>cy.get()</code> can be used to <em>select</em> an element. In general, it is easier to use the Cypress Selector Playground to generate these commands. In the Cypress browser, open Selector playground, click on the desired element, and click the &quot;Copy to Clipboard&quot; button.</p>
+<p><img src="https://i.imgur.com/Rq99SuO.png" alt=""></p>
+<p><img src="https://i.imgur.com/uvzGFv3.png" alt=""></p>
+<p><img src="https://i.imgur.com/FfGdAns.png" alt=""></p>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;#login-button&apos;</span>)
+</code></pre>
+<h2 id="typing-into-a-text-box">Typing into a Text Box</h2>
+<p><code>.type()</code> can be added to the end of a <code>cy.get()</code> command to type text into an element.</p>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;.username-input&apos;</span>).type(<span class="hljs-string">&apos;myname&apos;</span>)
+</code></pre>
+<h2 id="clicking-an-element">Clicking an Element</h2>
+<p><code>.click()</code> can be added to the end of a <code>cy.get()</code> command to click on an element.</p>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;#login-button&apos;</span>).click()
+</code></pre>
+<h2 id="verifying-an-element-contains-certain-text">Verifying an Element Contains Certain Text</h2>
+<p><code>.should()</code> can be added to the end of a <code>cy.get()</code> command to check the contents of an element.</p>
+<pre><code class="lang-js">cy.get(<span class="hljs-string">&apos;.label&apos;</span>).should(<span class="hljs-string">&apos;contain&apos;</span>, <span class="hljs-string">&apos;Cart&apos;</span>)
+</code></pre>
 
                                 
                                 </section>
@@ -224,10 +231,10 @@
 
             
                 
-                
-                <a href="FollowAlong.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Follow-Along">
-                    <i class="fa fa-angle-right"></i>
+                <a href="Challenge.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Challenge">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -236,7 +243,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Follow-Along","level":"1.2","depth":1,"path":"FollowAlong.md","ref":"FollowAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BOOKREADME.md","mtime":"2020-07-28T15:38:31.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-28T15:39:09.561Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cypress Commands Cheat Sheet","level":"1.4","depth":1,"previous":{"title":"Challenge","level":"1.3","depth":1,"path":"Challenge.md","ref":"Challenge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"CypressCommandsCheatSheet.md","mtime":"2020-07-28T15:38:31.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-28T15:39:09.561Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
