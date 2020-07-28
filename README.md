@@ -11,6 +11,9 @@ A camp to introduce Automated Testing with the [Cypress](https://www.cypress.io/
 | Follow-Along | 15m |
 | Individual | 45m |
 
+## Video
+This video walks through the lecture, follow-along activity, and challenge: https://app.sharebase.com/#/document/9293203/share/3-tGWNJ8lu4q-9u--MhElgoqFaIYgQ
+
 ## Software Requirements
 Go to [this folder](https://app.sharebase.com/#/folder/1279586/share/3-TMkMlfmH5Qx1RFMll6XB4vI3Reo) to find the necessary setup files.
 
