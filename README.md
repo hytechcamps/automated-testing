@@ -37,6 +37,7 @@ Start things off with a quick icebreaker activity so the students can get to kno
 Present the [PowerPoint](AutomatedTestingForBeginners.pptx).
 
 ## Kahoot
+https://create.kahoot.it/share/5833e3d6-bf25-4e83-a0f9-6cc066d72066
 
 ## Follow-Along
 Go through the [follow-along](FollowAlong.md) activity as a group. The instructor should share their screen, and the students should follow-along on their own computers. The instructor should ask the students for suggestions about what to do next.
