@@ -1,3 +1,3 @@
 - [Follow-Along](FollowAlong.md)
 - [Challenge](Challenge.md)
-- [Cypress Commands Cheat Sheet](CypressCommandsCheetSheet.md)
+- [Cypress Commands Cheat Sheet](CypressCommandsCheatSheet.md)
