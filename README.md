@@ -23,7 +23,7 @@ Go to [this folder](https://app.sharebase.com/#/folder/1279586/share/3-TMkMlfmH5
 - Cypress
 
 ## Cypress Project
-The actual Cypress code project is in the [CypressProject](CypressProject/) folder. To run the tests, open that folder in the command line and enter `npx cypress open` after installing all the necessary software.
+The actual Cypress code project is in the [Hy-Tech Camp](Hy-TechCamp/) folder. To run the tests, open that folder in the command line and enter `npx cypress open` after installing all the necessary software.
 
 ## Student Content
 Student-facing content is available at [hytechcamps.github.io](https://hytechcamps.github.io/automated-testing).
