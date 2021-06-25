@@ -1,5 +1,5 @@
 # Automated Testing for Beginners
-A workshop introducing automated testing using the [Cypress](https://cypress.io) framework.
+Welcome to the Automated Testing Hy-Tech Camp! This workshop introduces automated testing using the [Cypress](https://cypress.io) framework.
 
 ## Material
 - <a href="AutomatedTestingForBeginners.pptx" target="_blank">PowerPoint Presentation</a>
